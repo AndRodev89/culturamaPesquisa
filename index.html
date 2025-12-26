@@ -14,9 +14,30 @@
     <main>
         <section>
             <form action="" method="get">
-                <input type="text" name="username">
-                <button type="submit">enviar</button>
+                <fieldset></fieldset>
+                <label for="username">Nome:</label>
+                <input type="text" name="username" required>
+                <br>
+                <label for="userage">Idade:</label>
+                <input type="number" name="userage" min="12" max="100" required>
+                <br>
+                <label for="birthdate">Nascimento:</label>
+                <input type="date" name="birthdate">
+                <br>
+                <label for="email">E-mail.</label>
+                <input type="email" name="email" required>
+                <br>
+                <label for="userphonenumber">Telefone</label>
+                <input type=""name="userphonenumber" pattern="[0-9]{11}" placeholder="(21)xxxxx-xxxx">
+                <br>
+                <input type="file" accept="image/*">
+                <br>
 
+
+
+
+
+                <button type="submit">enviar</button>
             </form>
 
         </section>
